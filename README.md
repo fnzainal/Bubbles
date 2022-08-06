@@ -19,13 +19,50 @@ Bubbles is an Android library to provide a backwards compatible [Android Q (API 
 ## Usage
 
 ### Setup
-The Library is hosted via JCenter, and can be added as a dependency in your project.
 
-| Gradle | Maven 
-|:-------------|:-------------
-|compile 'com.siddharthks.bubbles:bubbles:1.0.0'|\<dependency\><br>&nbsp;&nbsp;\<groupId\>com.siddharthks.bubbles\</groupId\><br>&nbsp;&nbsp;\<artifactId\>bubbles\</artifactId\><br>&nbsp;&nbsp;\<version\>1.0.0\</version\><br>&nbsp;&nbsp;\<type\>pom\</type\><br>\</dependency\>
+#### Gradle
 
+Add the JitPack repository to your build file
 
+```
+    allprojects {
+        repositories {
+            ...
+            maven { url 'https://jitpack.io' }
+        }
+    }
+```
+
+Add the dependency
+
+```
+    dependencies {
+        implementation 'com.github.siddharth2010:Bubbles:v1.0.0'
+    }
+```
+
+#### Maven
+
+Add the JitPack repository to your build file
+
+```
+	<repositories>
+		<repository>
+		    <id>jitpack.io</id>
+		    <url>https://jitpack.io</url>
+		</repository>
+	</repositories>
+```
+
+Add the dependency
+
+```
+	<dependency>
+	    <groupId>com.github.siddharth2010</groupId>
+	    <artifactId>Bubbles</artifactId>
+	    <version>v1.0.0</version>
+	</dependency>
+```
 
 ### Interface
 Let's start with a simple setup for the Service
