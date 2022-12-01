@@ -26,7 +26,7 @@ public class SimpleService extends FloatingBubbleService {
                 super.decreaseNotificationCounterBy(1);
                 break;
             case "updateIcon":
-                super.updateBubbleIcon(ContextCompat.getDrawable(getContext(), R.drawable.close_default_icon));
+                super.updateBubbleIcon(ContextCompat.getDrawable(getContext(), R.drawable.icon_close_default));
                 break;
             case "restoreIcon":
                 super.restoreBubbleIcon();
